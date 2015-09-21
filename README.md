@@ -18,7 +18,6 @@ local FrameCache = Graphics.FrameCache
 local Animation = Graphics.Animation
 local Sprite = Graphics.Sprite
 
-
 local sprite, animation
 
 function love.load()
@@ -38,15 +37,21 @@ function love.load()
 	sprite.x, sprite.y = 100, 100
 	sprite.angle = 45 
 end
+```
 
+```lua
 function love.update(dt)
 	animation:update(dt)
 end
+```
 
+```lua
 function love.draw()
 	sprite:draw()
 end
+```
 
+```lua
 function love.keypressed(key, _)
  	if key == 's' then
  		animation:stop()
@@ -69,8 +74,5 @@ Just copy the `graphics` directory from `src` wherever you want it. Then require
 ## Specs
 
 This project uses [busted](http://olivinelabs.com/busted/) for its specs. If you want to run the specs, you will have to install it first. Then just execute the following from the root folder:
-
-    busted
-he root folder:
 
     busted
