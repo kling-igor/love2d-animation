@@ -1,0 +1,80 @@
+<exporter version="1.0">
+    <!-- identifier of the exporter -->
+    <name>LÖVE spritesheet exporter</name>
+	
+    <!-- display name of the exporter for the combo box -->
+    <displayName>LÖVE spritesheet</displayName>
+	
+    <!-- description of the exporter -->
+    <description>Custom exporter for LÖVE engine</description>
+
+    <!-- exporter version -->
+    <version>1.0</version>
+	
+    <files>
+        <file>
+            <!-- name of this file variable -->
+            <name>atlas</name>
+
+            <!-- human readable name (for GUI) -->
+            <displayName>LÖVE spritesheet file</displayName>
+
+            <!-- file extension for the file -->
+            <fileExtension>lua</fileExtension>
+
+            <!-- description what the file contains, used in tooltips in the GUI -->
+            <description>A lua file containing sprite data for LÖVE engine spritesheet</description>
+
+            <!-- name of the template file -->
+            <template>atlas.lua</template>
+        </file>
+
+        <file>
+            <!-- name of this file variable -->
+            <name>header</name>
+
+            <!-- human readable name (for GUI) -->
+            <displayName>Header file</displayName>
+
+            <!-- file extension for the file -->
+            <fileExtension>h</fileExtension>
+
+            <!-- description what the file contains, used in tooltips in the GUI -->
+            <description>Another file created from the same data. Might be a header file with definitions for the sprites.</description>
+
+            <!-- name of the template file -->
+            <template>plain.h</template>
+
+            <!-- write this file only for the first AutoSD variation -->
+            <!-- values are: all (default), first, last -->
+            <hasSeparateAutoSDFiles>first</hasSeparateAutoSDFiles>
+
+            <!-- do not write a file for each multipack variation -->
+            <hasSeparateMultiPackFiles>false</hasSeparateMultiPackFiles>
+
+            <!-- this file is optional -->
+            <optional>true</optional>
+        </file>
+    </files>
+
+    <!-- target framework supports trimming -->
+    <supportsTrimming>true</supportsTrimming>
+
+    <!-- target framework supports rotated sprites -->
+    <supportsRotation>false</supportsRotation>
+
+    <!-- rotated sprites direction (cw/ccw) -->
+    <rotationDirection>cw</rotationDirection>
+
+    <!-- supports npot sizes -->
+    <supportsNPOT>true</supportsNPOT>
+
+    <!-- supports file name stripping (remove .png etc) -->
+    <supportsTrimSpriteNames>no</supportsTrimSpriteNames>
+
+    <!-- supports texure subpath -->
+    <supportsTextureSubPath>no</supportsTextureSubPath>
+
+</exporter>
+
+
